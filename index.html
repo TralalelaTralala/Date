@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Лично для тебя ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Pacifico&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="background"></div>
+
+<div class="floating-elements">
+    <span>♡</span>
+    <span>♡</span>
+    <span>♡</span>
+    <span>✦</span>
+    <span>♡</span>
+    <span>✦</span>
+    <span>♡</span>
+    <span>♡</span>
+</div>
+
+<div class="page">
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="screen active" id="welcomeScreen">
+
+        <div class="card">
+
+            <div class="top-label">
+                💌 &nbsp; ЛИЧНО ДЛЯ ТЕБЯ
+            </div>
+
+            <div class="burger">
+                🍔
+            </div>
+
+            <div class="author">
+                ОТ ВЛАДА
+            </div>
+
+            <h1>
+                Ну что...<br>
+                сводишь меня в<br>
+                <span>Макдональдс?</span> 🥺
+            </h1>
+
+            <div class="big-emoji">
+                🍔 ❤️
+            </div>
+
+            <p class="description">
+                Есть очень важный вопрос.<br>
+                И, к сожалению, картошка сама себя не поест.
+            </p>
+
+            <div class="divider">
+                <span></span>
+                ♡
+                <span></span>
+            </div>
+
+            <div class="buttons">
+
+                <button class="yes-btn" id="yesBtn">
+                    Конечно, свожу 😏❤️
+                </button>
+
+            </div>
+
+            <div class="attempt-counter" id="attemptCounter">
+                Попыток передумать: <strong>0</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ЭКРАН ДАТЫ -->
+    <section class="screen" id="dateScreen">
+
+        <div class="card date-card">
+
+            <div class="small-icon">
+                📅
+            </div>
+
+            <div class="author">
+                ТЕПЕРЬ САМОЕ ВАЖНОЕ
+            </div>
+
+            <h2>
+                Тогда выбирай день ❤️
+            </h2>
+
+            <p class="subtitle">
+                Когда отправляемся за МАКООООМ?
+            </p>
+
+            <div class="calendar-header">
+
+                <button class="month-btn" disabled>
+                    ‹
+                </button>
+
+                <div id="monthTitle">
+                    Октябрь 2026
+                </div>
+
+                <button class="month-btn" disabled>
+                    ›
+                </button>
+
+            </div>
+
+            <div class="weekdays">
+                <span>Пн</span>
+                <span>Вт</span>
+                <span>Ср</span>
+                <span>Чт</span>
+                <span>Пт</span>
+                <span>Сб</span>
+                <span>Вс</span>
+            </div>
+
+            <div class="calendar" id="calendar"></div>
+
+            <div class="busy-info">
+                2 и 3 октября недоступны - Влад будет занят 
+            </div>
+
+            <div class="selected-info" id="selectedDateInfo">
+                Выбери день ❤️
+            </div>
+
+            <button
+                class="continue-btn"
+                id="dateContinueBtn"
+                disabled
+            >
+                Этот день подходит ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ЭКРАН ВРЕМЕНИ -->
+    <section class="screen" id="timeScreen">
+
+        <div class="card time-card">
+
+            <div class="small-icon">
+                ⏰
+            </div>
+
+            <div class="author">
+                ПОЧТИ ГОТОВО
+            </div>
+
+            <h2>
+                Отлично! Осталось решить самое важное...
+            </h2>
+
+            <p class="subtitle">
+                Во сколько встречаемся? 
+            </p>
+
+            <div class="chosen-date" id="chosenDate"></div>
+
+            <div class="time-grid" id="timeGrid"></div>
+
+            <button
+                class="continue-btn"
+                id="timeContinueBtn"
+                disabled
+            >
+                Всё, я готова ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ФИНАЛЬНЫЙ ЭКРАН -->
+    <section class="screen" id="finalScreen">
+
+        <div class="card final-card">
+
+            <div class="final-heart">
+                ❤️
+            </div>
+
+            <div class="author">
+                ОФИЦИАЛЬНО
+            </div>
+
+            <h2>
+                Свидание официально<br>
+                запланировано ❤️
+            </h2>
+
+            <div class="final-date-box">
+
+                <div class="final-item">
+
+                    <span>📅</span>
+
+                    <div>
+                        <small>ДАТА</small>
+                        <strong id="finalDate"></strong>
+                    </div>
+
+                </div>
+
+                <div class="final-item">
+
+                    <span>⏰</span>
+
+                    <div>
+                        <small>ВРЕМЯ</small>
+                        <strong id="finalTime"></strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="final-text">
+                Влад уже получил уведомление (но лучше написать ему в тг)
+            </p>
+
+            <p class="final-subtext">
+                Теперь осталось только дождаться этого дня...
+            </p>
+
+            <div class="joke">
+            Моя попи под защитой!!
+            </div>
+
+            <button
+                class="reset-btn"
+                id="resetBtn"
+            >
+                Выбрать заново 💕
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<div class="transition" id="transition"></div>
+
+<div id="celebration"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
